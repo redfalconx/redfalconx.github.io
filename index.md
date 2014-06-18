@@ -1,0 +1,53 @@
+---
+title       : How to tell if you're a Data Nerd
+subtitle    : 
+author      : redfalconx
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## The idea is simple
+
+1. Data Nerds can be identified based on the number of coursera data courses they've taken.
+2. The app will calculate your likelihood of being a Data Nerd.
+3. Values greater than 1 mean you're just a huge, gigantic Data Nerd. There is no helping you.
+
+--- .class #id 
+
+## The Formula
+
+
+The formula is simple. It takes the number of courses and divides by 10.
+
+---
+
+## The function
+
+The function looks like this:
+
+
+```r
+DataNerd <- function(courses) courses / 10
+```
+
+---
+
+## Voila!
+
+For example, if we put in 5 courses, it will return
+
+You are this much of a Data Nerd
+
+
+```
+## [1] 0.5
+```
+
+This will predict how much of a Data Nerd you are.
+
+---
